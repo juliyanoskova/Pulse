@@ -1,0 +1,24 @@
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+}
+@import 'blocks/promo_media';
+@import 'blocks/buttons_media';
+@import 'blocks/header_media';
+@import 'blocks/titles_media';
+@import 'blocks/advantages_media';

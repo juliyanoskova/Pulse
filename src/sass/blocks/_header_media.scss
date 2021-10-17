@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    
+    .header__official {
+        display: none;  
+    }
+   
+}
+
+@media (max-width: 575px) {
+
+    .header__logo {
+        width: 168px;  
+    }
+    .header__phone {
+        font-size: 14px;;  
+    }
+  
+   
+}
