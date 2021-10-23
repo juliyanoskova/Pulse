@@ -1,0 +1,39 @@
+@media (max-width: 1199px) {
+    .consultation {
+        background-position: 57%;
+    }
+}
+
+@media (max-width: 991px) {
+    .consultation {
+        min-height: 520px;
+        padding: 50px 0;
+        &__descr {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .consultation {
+        &__descr {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+   
+}
+
+@media (max-width: 575px) {
+    .consultation {
+        min-height: 490px;
+        padding: 40px 0;
+        &__descr {
+            margin-top: 14px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    
+}

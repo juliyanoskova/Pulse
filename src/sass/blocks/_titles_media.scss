@@ -1,13 +1,28 @@
 @media (max-width: 991px) {
-
     .title {
-        font-size: 24px;
+        font-size: 26px;
+        &_left {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .title {
+        font-size: 22px;
+        &_left {
+            font-size: 26px;
+            text-align: center;
+        }
     }
 }
 
 @media (max-width: 575px) {
-    
     .title {
         font-size: 20px;
+        &_left {
+            font-size: 22px;
+            line-height: 28px;
+        }
     }
 }

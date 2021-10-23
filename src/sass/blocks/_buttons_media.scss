@@ -1,14 +1,17 @@
 @media (max-width: 575px) {
 
     .button_header {
-        width: 127px;
+        width: 100%;
         margin-top: 10px;
         font-size: 10px;
     }
     
     .button_main {
-        margin-top: 35px;
+        margin-top: 30px;
         width: 250px;
+        font-size: 14px;
+    }
+    .button_submit {
         font-size: 14px;
     }
     
