@@ -1,0 +1,59 @@
+.carousel {
+    min-height: 742px;
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    
+    // .slick-prev, .slick-next {
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4px;
+        border: none;
+        background-color: #ffff;
+        :focus {
+            outline: 4px solid rgb(104, 104, 121);
+        }
+        img {
+        
+            width: 30px;
+            height: 50px;
+        }
+    }
+    // .slick-next {
+    .next {
+        left: auto;
+        right: 4px;   
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        button { 
+            border: none;
+            border-radius: 100%;
+            width: 15px;
+            height: 15px;
+            margin: 0 20px;
+            background-color: #C70101;
+        }
+        button.tns-nav-active {
+                background-color: #000; 
+            }
+        
+    }
+    
+
+
+}

@@ -1,0 +1,48 @@
+@media (max-width: 991px) {
+    .carousel {
+        min-height: 565px;
+        padding: 60px 0;
+        &__inner {
+            width: 90%;
+            img {
+                width: 80%;
+            } 
+        }
+        .prev, .next {
+            img {
+                width: 25px;
+                height: 40px;
+            }
+        }
+    }
+    
+}
+@media (max-width: 767px) {
+    .carousel {
+        min-height: 510px;
+        padding: 45px 0;
+   
+        .prev, .next {
+            display: none;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .carousel {
+        min-height: 350px;
+        padding: 40px 0;
+        &__inner {
+            img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+        .tns-nav {
+            button { 
+                width: 12px;
+                height: 12px;
+                
+            }
+        }
+    }
+}
