@@ -1,3 +1,44 @@
 @media (max-width: 991px) {
-    
+    .feedback {
+        &__item {
+            margin-top: 70px;
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
+        }
+        &__text {
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback {
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+        }
+        &__text {
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        &__photo {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .feedback {
+        &__text {
+            padding: 0 15px;
+        }
+    }
 }
