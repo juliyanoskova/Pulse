@@ -70,8 +70,9 @@
             color: #0D0D0D;
         }
         &__descr {
+            margin: 0 auto;
             margin-top: 15px;
-            // width: 250px;
+            max-width: 250px;
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
