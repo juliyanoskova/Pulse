@@ -9,6 +9,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+        background: #d32323;;
+        
+    }
     &_header {
         margin-top: 5px;
     }
@@ -28,5 +32,6 @@
         width: 131px;
         height: 40px;
         font-size: 14px;
+        
     }
 }
