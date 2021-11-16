@@ -12,6 +12,12 @@
         background: $main-color;
         
     }
+    &__map_450 {
+        display: none;
+    }
+    &__map_300 {
+        display: none;
+    }
     &__addr {
         margin-bottom: 36px;
         font-weight: 500;
