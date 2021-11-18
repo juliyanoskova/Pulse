@@ -102,6 +102,8 @@
           $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    $('.feed-form').validate();
 });
 
 
