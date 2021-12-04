@@ -81,7 +81,7 @@
         });
 
       });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
@@ -93,7 +93,7 @@
         
     });
     $('.modal__close').on('click', function() {
-        $('.overlay, #consultation').fadeOut('slow');
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
     });
    
     $('.button_mini').each(function(i) {
@@ -105,7 +105,7 @@
 
     // $('#consultation-form').validate();
     // $('#consultation form').validate({
-    //   rules: {
+    //   rules: { 
     //     name: {
     //       required: true,
     //       minlength: 2
@@ -130,7 +130,7 @@
     //   }
     // });
     // $('#order form').validate();
-    
+
 //оптимизировали валидацию форм функцией
     function valideForms(form) {
       $(form).validate({
@@ -164,6 +164,28 @@
     valideForms('#consultation form');
     valideForms('#order form');
 
+    $('input[name=phone]').mask('+7 (999) 999-9999');
+
+    $('form').submit(function(e) {
+      e.preventDefault();
+
+      if (!$(this).valid()) {
+        return;
+      }
+
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+      });
+      return false;
+    });
 });
 
 
